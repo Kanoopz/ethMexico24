@@ -1,2 +1,6 @@
 # ethMexico24
 frutalWebHouseHackathon
+
+- NASTR:        0xE19D20B8490c50993E40c53c6849d572357f3Ecb
+- astarVault:   0x56A19dD5032400E6c2A8eb60C818BA3faB34AdEb
+- astarUsd:     0x0aAcEEC390386E300080811dF0b713fC0Af3D843

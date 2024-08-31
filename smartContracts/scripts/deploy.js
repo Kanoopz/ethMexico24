@@ -9,7 +9,8 @@ const {ethers} = require("hardhat");
 
 async function main() 
 {
-   const contractFactory = await ethers.getContractFactory("dappStakingInteraction");
+   const contractFactory = await ethers.getContractFactory("NASTR");
+  //  const contractFactory = await ethers.getContractFactory("astarVault");
    const contractInstance = await contractFactory.deploy();
    await contractInstance.waitForDeployment();
 

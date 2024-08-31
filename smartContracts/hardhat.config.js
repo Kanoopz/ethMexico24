@@ -19,9 +19,9 @@ module.exports = {
   {
     hardhat:
     {},
-    mumbai:
+    amoy:
     {
-      url: "https://rpc-mumbai.maticvigil.com",
+      url: "https://polygon-amoy.infura.io/v3/408559c55ba7479b9f3adee094af9d80",
       accounts: ["0xd046263c0533990c39363b2211811de7d563f9be0d61135fad86db497e2073d5"],
     },
     //Address: 0x1e2e64828Cb332cC41A972020e45249C3B252e9e
@@ -46,6 +46,11 @@ module.exports = {
       url: "https://rpc.sepolia.org/",
       accounts: ["0xd046263c0533990c39363b2211811de7d563f9be0d61135fad86db497e2073d5"]
     },
+    arbSepolia:
+    {
+      url: "https://arb-sepolia.g.alchemy.com/v2/offZMXvXMjPT3Umglb0CN3fuwSJDtZcB",
+      accounts: ["0xd046263c0533990c39363b2211811de7d563f9be0d61135fad86db497e2073d5"]
+    },
     fuji:
     {
       url: "https://api.avax-test.network/ext/bc/C/rpc",
@@ -56,6 +61,12 @@ module.exports = {
       url: "https://zkyoto.explorer.startale.com/",
       chainId: 6038361,
       accounts: ["0xd046263c0533990c39363b2211811de7d563f9be0d61135fad86db497e2073d5"]
+    },
+    shibuya:
+    {
+      url: "https://shibuya.blockscout.com",
+      chainId: 81,
+      accounts: ["0xd046263c0533990c39363b2211811de7d563f9be0d61135fad86db497e2073d5"]
     }
   },
   etherscan:
@@ -64,10 +75,13 @@ module.exports = {
     {
       goerli: 'XK44A4C8275XQFE79DCJ5XF38JPUZQKJBU',
       polygonMumbai: '8QVTC5IT9JVB3S7HHNRIAHQNYW9WHHUH2X',
+      polygonAmoy: '8QVTC5IT9JVB3S7HHNRIAHQNYW9WHHUH2X',
       optimisticGoerli: 'I9K6THC5PWY4W3AKXB6EM59I47FJ5RHMPU',
       baseGoerli: '1b743f33-a914-40b2-84e1-98983de0ec87',
       sepolia: 'XK44A4C8275XQFE79DCJ5XF38JPUZQKJBU',
-      zkyoto: 'empty'
+      arbitrumSepolia: 'XH35E3UEWPKDWJZG8UW1Z9JQP88IPYZPCM',
+      zkyoto: 'empty',
+      shibuya: 'empty'
     }
   }
 };
