@@ -58,7 +58,7 @@ module.exports = {
     },
     zkyoto:
     {
-      url: "https://zkyoto.explorer.startale.com/",
+      url: "https://rpc.startale.com/zkyoto",
       chainId: 6038361,
       accounts: ["0xd046263c0533990c39363b2211811de7d563f9be0d61135fad86db497e2073d5"]
     },

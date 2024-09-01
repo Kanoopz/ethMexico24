@@ -1,0 +1,301 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "dappStakingPrecompile",
+  "sourceName": "contracts/OTHER/notes/dappStakingPrecompile.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum dappStakingPrecompile.SmartContractType",
+              "name": "contract_type",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bytes",
+              "name": "contract_address",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct dappStakingPrecompile.SmartContract",
+          "name": "smart_contract",
+          "type": "tuple"
+        }
+      ],
+      "name": "claim_bonus_reward",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum dappStakingPrecompile.SmartContractType",
+              "name": "contract_type",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bytes",
+              "name": "contract_address",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct dappStakingPrecompile.SmartContract",
+          "name": "smart_contract",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint256",
+          "name": "era",
+          "type": "uint256"
+        }
+      ],
+      "name": "claim_dapp_reward",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "claim_staker_rewards",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "claim_unlocked",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "cleanup_expired_entries",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "amount",
+          "type": "uint128"
+        }
+      ],
+      "name": "lock",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "protocol_state",
+      "outputs": [
+        {
+          "components": [
+            {
+              "internalType": "uint256",
+              "name": "era",
+              "type": "uint256"
+            },
+            {
+              "internalType": "uint256",
+              "name": "period",
+              "type": "uint256"
+            },
+            {
+              "internalType": "enum dappStakingPrecompile.Subperiod",
+              "name": "subperiod",
+              "type": "uint8"
+            }
+          ],
+          "internalType": "struct dappStakingPrecompile.ProtocolState",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum dappStakingPrecompile.SmartContractType",
+              "name": "contract_type",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bytes",
+              "name": "contract_address",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct dappStakingPrecompile.SmartContract",
+          "name": "smart_contract",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint128",
+          "name": "amount",
+          "type": "uint128"
+        }
+      ],
+      "name": "stake",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint128",
+          "name": "amount",
+          "type": "uint128"
+        }
+      ],
+      "name": "unlock",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "unlocking_period",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum dappStakingPrecompile.SmartContractType",
+              "name": "contract_type",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bytes",
+              "name": "contract_address",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct dappStakingPrecompile.SmartContract",
+          "name": "smart_contract",
+          "type": "tuple"
+        },
+        {
+          "internalType": "uint128",
+          "name": "amount",
+          "type": "uint128"
+        }
+      ],
+      "name": "unstake",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "components": [
+            {
+              "internalType": "enum dappStakingPrecompile.SmartContractType",
+              "name": "contract_type",
+              "type": "uint8"
+            },
+            {
+              "internalType": "bytes",
+              "name": "contract_address",
+              "type": "bytes"
+            }
+          ],
+          "internalType": "struct dappStakingPrecompile.SmartContract",
+          "name": "smart_contract",
+          "type": "tuple"
+        }
+      ],
+      "name": "unstake_from_unregistered",
+      "outputs": [
+        {
+          "internalType": "bool",
+          "name": "",
+          "type": "bool"
+        }
+      ],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}

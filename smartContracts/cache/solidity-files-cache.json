@@ -716,42 +716,6 @@
         "StorageSlot"
       ]
     },
-    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/astar/dappStakingPrecompile.sol": {
-      "lastModificationDate": 1724945439950,
-      "contentHash": "b0c825a384ebca2cf0dbe28833989155",
-      "sourceName": "contracts/astar/dappStakingPrecompile.sol",
-      "solcConfig": {
-        "version": "0.8.24",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "evmVersion": "paris",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "0.8.24"
-      ],
-      "artifacts": [
-        "dappStakingPrecompile"
-      ]
-    },
     "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/metapool/mpUsd.sol": {
       "lastModificationDate": 1724943471105,
       "contentHash": "a960945a01dc36099ceb78ad9396f6e3",
@@ -831,44 +795,6 @@
         "AggregatorV3Interface",
         "metapoolStakingSC",
         "mpVault"
-      ]
-    },
-    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/astar/dappStakingInteraction.sol": {
-      "lastModificationDate": 1724945559574,
-      "contentHash": "5de553ad269680f98d6df5bade7af776",
-      "sourceName": "contracts/astar/dappStakingInteraction.sol",
-      "solcConfig": {
-        "version": "0.8.24",
-        "settings": {
-          "optimizer": {
-            "enabled": true,
-            "runs": 200
-          },
-          "evmVersion": "paris",
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./dappStakingPrecompile.sol"
-      ],
-      "versionPragmas": [
-        "0.8.24"
-      ],
-      "artifacts": [
-        "dappStakingInteraction"
       ]
     },
     "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/astar/NASTR.sol": {
@@ -958,8 +884,8 @@
       ]
     },
     "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/astar/astarVault.sol": {
-      "lastModificationDate": 1725056489909,
-      "contentHash": "4b2147b1d16e098a1b1f776d517b2bfd",
+      "lastModificationDate": 1725057320470,
+      "contentHash": "d7436e74af23d95a1c0146b22fe11223",
       "sourceName": "contracts/astar/astarVault.sol",
       "solcConfig": {
         "version": "0.8.24",
@@ -1711,6 +1637,1447 @@
       ],
       "artifacts": [
         "Math"
+      ]
+    },
+    "/Users/kanoopz/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/OAppCore.sol": {
+      "lastModificationDate": 1725093020802,
+      "contentHash": "392cf9b920add3244966148ee8de682a",
+      "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/OAppCore.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "./interfaces/IOAppCore.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "OAppCore"
+      ]
+    },
+    "/Users/kanoopz/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppCore.sol": {
+      "lastModificationDate": 1725093020801,
+      "contentHash": "f88e6ddf8ff977739a7178f0d1a276b3",
+      "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppCore.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IOAppCore"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol": {
+      "lastModificationDate": 1725093280658,
+      "contentHash": "0790766778fa8995935c093d9cf03f84",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./IMessageLibManager.sol",
+        "./IMessagingComposer.sol",
+        "./IMessagingChannel.sol",
+        "./IMessagingContext.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "ILayerZeroEndpointV2"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLibManager.sol": {
+      "lastModificationDate": 1725093280661,
+      "contentHash": "a56a887b2721a98cf82842503bbf0ef0",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessageLibManager.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IMessageLibManager"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol": {
+      "lastModificationDate": 1725093280664,
+      "contentHash": "bcc2df90697b23f02303892874f96324",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingComposer.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IMessagingComposer"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingContext.sol": {
+      "lastModificationDate": 1725093280665,
+      "contentHash": "2b8bfa473f049af8c74dffbff0766abf",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingContext.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IMessagingContext"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingChannel.sol": {
+      "lastModificationDate": 1725093280662,
+      "contentHash": "bd92a8f1c9f815025e8e3e676fe40b0d",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/IMessagingChannel.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "IMessagingChannel"
+      ]
+    },
+    "/Users/kanoopz/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/OAppSender.sol": {
+      "lastModificationDate": 1725093020803,
+      "contentHash": "8a54c076d80f5711e3511a0bbfcff1a1",
+      "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/OAppSender.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+        "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroEndpointV2.sol",
+        "./OAppCore.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "OAppSender"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol": {
+      "lastModificationDate": 1725093113219,
+      "contentHash": "697fd27924863e77c17dace2179018b2",
+      "sourceName": "@openzeppelin/contracts/token/ERC20/utils/SafeERC20.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../IERC20.sol",
+        "../extensions/IERC20Permit.sol",
+        "../../../utils/Address.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SafeERC20"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/@openzeppelin/contracts/utils/Address.sol": {
+      "lastModificationDate": 1725093111959,
+      "contentHash": "79c699f80eb8a9b168cb34e37816f894",
+      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "Address"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol": {
+      "lastModificationDate": 1725093280659,
+      "contentHash": "07bcbc5377578339628265a849de70f5",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./ILayerZeroEndpointV2.sol"
+      ],
+      "versionPragmas": [
+        ">=0.8.0"
+      ],
+      "artifacts": [
+        "ILayerZeroReceiver"
+      ]
+    },
+    "/Users/kanoopz/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppReceiver.sol": {
+      "lastModificationDate": 1725093020801,
+      "contentHash": "8744fbd8f6967b21443fddfccede3f1e",
+      "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/interfaces/IOAppReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@layerzerolabs/lz-evm-protocol-v2/contracts/interfaces/ILayerZeroReceiver.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "IOAppReceiver"
+      ]
+    },
+    "/Users/kanoopz/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/OAppReceiver.sol": {
+      "lastModificationDate": 1725093020803,
+      "contentHash": "3621393509939962dd64af436aa5d131",
+      "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/OAppReceiver.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./interfaces/IOAppReceiver.sol",
+        "./OAppCore.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "OAppReceiver"
+      ]
+    },
+    "/Users/kanoopz/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol": {
+      "lastModificationDate": 1725093020802,
+      "contentHash": "5fff81a48e0699606f1ee7387d4a31a2",
+      "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./OAppSender.sol",
+        "./OAppReceiver.sol",
+        "./OAppCore.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "OApp"
+      ]
+    },
+    "/Users/kanoopz/node_modules/@layerzerolabs/oapp-evm/contracts/oapp/libs/OptionsBuilder.sol": {
+      "lastModificationDate": 1725093020804,
+      "contentHash": "aaba44fdba19c251ddcb7d80c4998e19",
+      "sourceName": "@layerzerolabs/oapp-evm/contracts/oapp/libs/OptionsBuilder.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "solidity-bytes-utils/contracts/BytesLib.sol",
+        "@openzeppelin/contracts/utils/math/SafeCast.sol",
+        "@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/ExecutorOptions.sol",
+        "@layerzerolabs/lz-evm-messagelib-v2/contracts/uln/libs/DVNOptions.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "OptionsBuilder"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/solidity-bytes-utils/contracts/BytesLib.sol": {
+      "lastModificationDate": 1725093279694,
+      "contentHash": "f4aae4537e2686b91fcd881aeed71657",
+      "sourceName": "solidity-bytes-utils/contracts/BytesLib.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        ">=0.8.0 <0.9.0"
+      ],
+      "artifacts": [
+        "BytesLib"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/@openzeppelin/contracts/utils/math/SafeCast.sol": {
+      "lastModificationDate": 1725093112954,
+      "contentHash": "d72cdfaacd4b1b8e090b57f4b7200ddc",
+      "sourceName": "@openzeppelin/contracts/utils/math/SafeCast.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "SafeCast"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/@layerzerolabs/lz-evm-messagelib-v2/contracts/uln/libs/DVNOptions.sol": {
+      "lastModificationDate": 1725093281072,
+      "contentHash": "d2b1c66f564862f65b37230b44da37c0",
+      "sourceName": "@layerzerolabs/lz-evm-messagelib-v2/contracts/uln/libs/DVNOptions.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "solidity-bytes-utils/contracts/BytesLib.sol",
+        "@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/BitMaps.sol",
+        "@layerzerolabs/lz-evm-protocol-v2/contracts/libs/CalldataBytesLib.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "DVNOptions"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/ExecutorOptions.sol": {
+      "lastModificationDate": 1725093280685,
+      "contentHash": "d9e985d1c5d407ba110da010983bcfb6",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/ExecutorOptions.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "../../libs/CalldataBytesLib.sol"
+      ],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "ExecutorOptions"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/BitMaps.sol": {
+      "lastModificationDate": 1725093280682,
+      "contentHash": "b2d6a04de0dde1607086d9872aac790e",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/messagelib/libs/BitMaps.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "BitMaps"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/node_modules/@layerzerolabs/lz-evm-protocol-v2/contracts/libs/CalldataBytesLib.sol": {
+      "lastModificationDate": 1725093280670,
+      "contentHash": "673ca16094a43c577ed24243c20361aa",
+      "sourceName": "@layerzerolabs/lz-evm-protocol-v2/contracts/libs/CalldataBytesLib.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.20"
+      ],
+      "artifacts": [
+        "CalldataBytesLib"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/OTHER/layerZeroTests/astarEvm.sol": {
+      "lastModificationDate": 1725150517512,
+      "contentHash": "d54b888810d17a4e8f6fbfc768d53162",
+      "sourceName": "contracts/OTHER/layerZeroTests/astarEvm.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@layerzerolabs/oapp-evm/contracts/oapp/libs/OptionsBuilder.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "astarEvm"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/crossChain/samples/ethereumL1.sol": {
+      "lastModificationDate": 1725178038129,
+      "contentHash": "85c937defc17cbaf0e0d25fa08c4dbde",
+      "sourceName": "contracts/crossChain/samples/ethereumL1.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@layerzerolabs/oapp-evm/contracts/oapp/libs/OptionsBuilder.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "ethereumL1",
+        "mpUsd"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/crossChain/zkL2MpUsd.sol": {
+      "lastModificationDate": 1725178475458,
+      "contentHash": "3f2090f10fa0004b9e257938e44e63f2",
+      "sourceName": "contracts/crossChain/zkL2MpUsd.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "zkL2MpUsd"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/crossChain/zkL2AstarUsd.sol": {
+      "lastModificationDate": 1725178729962,
+      "contentHash": "ad8528f9afd7118c9b0a45407e178618",
+      "sourceName": "contracts/crossChain/zkL2AstarUsd.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "zkL2AstarUsd"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/crossChain/samples/layerZeroInfra.sol": {
+      "lastModificationDate": 1725178041431,
+      "contentHash": "1224a299a205c1d171775b9aee157e5b",
+      "sourceName": "contracts/crossChain/samples/layerZeroInfra.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol",
+        "@openzeppelin/contracts/access/Ownable.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "infraLayerZero"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/crossChain/samples/astarL2ZkEvmAstrUsd.sol": {
+      "lastModificationDate": 1725178035642,
+      "contentHash": "6c26f363630772bf1562cdc9cb08c98d",
+      "sourceName": "contracts/crossChain/samples/astarL2ZkEvmAstrUsd.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./layerZeroInfra.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "astarL2ZkAstrEvm"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/crossChain/samples/astarL1Evm.sol": {
+      "lastModificationDate": 1725178034326,
+      "contentHash": "46879b788af4785ba0d882d86c4b5956",
+      "sourceName": "contracts/crossChain/samples/astarL1Evm.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./layerZeroInfra.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "astarL1Evm",
+        "astarUsd"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/crossChain/samples/astarL2ZkEvmMpUsd.sol": {
+      "lastModificationDate": 1725178036694,
+      "contentHash": "3ff8bcfe5382f813928c5ef98d9ae281",
+      "sourceName": "contracts/crossChain/samples/astarL2ZkEvmMpUsd.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@layerzerolabs/oapp-evm/contracts/oapp/libs/OptionsBuilder.sol",
+        "@openzeppelin/contracts/token/ERC20/ERC20.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Burnable.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@openzeppelin/contracts/token/ERC20/extensions/ERC20Permit.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "astarL2ZkEvmMpUsd"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/OTHER/layerZeroTests/ethereum.sol": {
+      "lastModificationDate": 1725151431916,
+      "contentHash": "f95f00112c28a6c26342c79d22708ce3",
+      "sourceName": "contracts/OTHER/layerZeroTests/ethereum.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@layerzerolabs/oapp-evm/contracts/oapp/libs/OptionsBuilder.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "ethereum"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/OTHER/layerZeroTests/astarZkEvm.sol": {
+      "lastModificationDate": 1725157242105,
+      "contentHash": "55bc1b4e9cd9100da159233a721b1ff2",
+      "sourceName": "contracts/OTHER/layerZeroTests/astarZkEvm.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@layerzerolabs/oapp-evm/contracts/oapp/libs/OptionsBuilder.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "astarZkEvm"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/OTHER/notes/dappStakingInteraction.sol": {
+      "lastModificationDate": 1725061707416,
+      "contentHash": "5de553ad269680f98d6df5bade7af776",
+      "sourceName": "contracts/OTHER/notes/dappStakingInteraction.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "./dappStakingPrecompile.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "dappStakingInteraction"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/OTHER/notes/dappStakingPrecompile.sol": {
+      "lastModificationDate": 1725061693893,
+      "contentHash": "b0c825a384ebca2cf0dbe28833989155",
+      "sourceName": "contracts/OTHER/notes/dappStakingPrecompile.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "dappStakingPrecompile"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/crossChain/ethereumEndpoint.sol": {
+      "lastModificationDate": 1725202165806,
+      "contentHash": "d9870e70e495d3cfd43b11d12537ad5d",
+      "sourceName": "contracts/crossChain/ethereumEndpoint.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@layerzerolabs/oapp-evm/contracts/oapp/libs/OptionsBuilder.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "ethereumEndpoint",
+        "mpUsd"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/crossChain/astarZkL2EthereumEndpoint.sol": {
+      "lastModificationDate": 1725201942105,
+      "contentHash": "140f9f1b2a15d6743f7197ef7975c914",
+      "sourceName": "contracts/crossChain/astarZkL2EthereumEndpoint.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@layerzerolabs/oapp-evm/contracts/oapp/libs/OptionsBuilder.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "astarZkL2EthereumEndpoint",
+        "zkL2MpUsd"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/crossChain/astarZkL2AstarEvmEndpoint.sol": {
+      "lastModificationDate": 1725201941397,
+      "contentHash": "071c834ca5226fadd86f9550e7997f45",
+      "sourceName": "contracts/crossChain/astarZkL2AstarEvmEndpoint.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@layerzerolabs/oapp-evm/contracts/oapp/libs/OptionsBuilder.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "astarZkL2AstarEvmEndpoint",
+        "zkL2AstarUsd"
+      ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/crossChain/astarEvmEndpoint.sol": {
+      "lastModificationDate": 1725215391866,
+      "contentHash": "223c855cae8fb95a86cb30a2eed48c3a",
+      "sourceName": "contracts/crossChain/astarEvmEndpoint.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [
+        "@layerzerolabs/oapp-evm/contracts/oapp/OApp.sol",
+        "@openzeppelin/contracts/access/Ownable.sol",
+        "@layerzerolabs/oapp-evm/contracts/oapp/libs/OptionsBuilder.sol"
+      ],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "astarEvmEndpoint",
+        "astarUsd"
       ]
     }
   }
