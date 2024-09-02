@@ -9,10 +9,11 @@ const {ethers} = require("hardhat");
 
 async function main() 
 {
-   const contractFactory = await ethers.getContractFactory("ethereumL1");
+  // const contractFactory = await ethers.getContractFactory("mpVault");
   //  const contractFactory = await ethers.getContractFactory("ethereum");astarL2ZkEvmMpUsd
   //  const contractFactory = await ethers.getContractFactory("astarZkEvm");
   //  const contractFactory = await ethers.getContractFactory("astarVault");
+  const contractFactory = await ethers.getContractFactory("ethereumEndpoint");
    const contractInstance = await contractFactory.deploy();
    await contractInstance.waitForDeployment();
 

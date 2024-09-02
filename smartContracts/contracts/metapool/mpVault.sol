@@ -31,9 +31,6 @@ interface AggregatorV3Interface
 
 contract mpVault
 {
-    // mpEth TOKEN: 0xe50339fE67402Cd59c32656D679479801990579f
-    uint256 public assetsValue;
-
     address public METAPOOL_STAKING_AND_MPETH_TOKEN_ADDRESS = 0xe50339fE67402Cd59c32656D679479801990579f;
     address public ETH_USD_PAIR_PRICE_FEED_ADDRESS = 0x694AA1769357215DE4FAC081bf1f309aDC325306;
 
@@ -89,25 +86,5 @@ contract mpVault
     function getMpUsdStablecoinAddress() public view returns(address)
     {
         return metapoolUsd.getAddress();
-    }
-
-
-
-
-
-    function getAssetsValueProxy() public returns(uint256)
-    {
-        return metapoolStakingSC(METAPOOL_STAKING_AND_MPETH_TOKEN_ADDRESS).totalAssets();
-    }
-
-    function getAndUpdateAssetsValueProxy() public
-    {
-        uint256 value = metapoolStakingSC(METAPOOL_STAKING_AND_MPETH_TOKEN_ADDRESS).totalAssets();
-        assetsValue = value;
-    }
-
-    function depositEthProxy() public payable
-    {
-        metapoolStakingSC(METAPOOL_STAKING_AND_MPETH_TOKEN_ADDRESS).depositETH{value: msg.value}(msg.sender);
     }
 }

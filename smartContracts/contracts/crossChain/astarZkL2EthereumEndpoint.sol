@@ -9,6 +9,9 @@ pragma solidity 0.8.24;
 interface zkL2MpUsd
 {
     function mint(address to, uint256 amount) external;
+    function balanceOf(address account) external view returns (uint256);
+    function allowance(address owner, address spender) external view returns (uint256);
+    function burnFrom(address account, uint256 value) external;
 }
 
 contract astarZkL2EthereumEndpoint is OApp
@@ -30,25 +33,24 @@ contract astarZkL2EthereumEndpoint is OApp
 
     function bridgeBackStablecoin(uint256 paramStablecoinQuantityToBridge) external payable 
     {
-        // require(mpUsd(MPUSD_TOKEN_ADDRESS).balanceOf(msg.sender) >= paramStablecoinQuantityToBridge, "Not enought stablecoin balance.");
-        // require(mpUsd(MPUSD_TOKEN_ADDRESS).allowance(msg.sender, address(this)) >= paramStablecoinQuantityToBridge, "Not enought allowance, please add more.");
+        require(zkL2MpUsd(ZK_L2_MP_USD_ADDRESS).balanceOf(msg.sender) >= paramStablecoinQuantityToBridge, "Not enought stablecoin balance.");
+        require(zkL2MpUsd(ZK_L2_MP_USD_ADDRESS).allowance(msg.sender, address(this)) >= paramStablecoinQuantityToBridge, "Not enought allowance, please add more.");
 
-        // bytes memory options = OptionsBuilder.newOptions().addExecutorLzComposeOption(0, 300000, 0);
-        // bytes memory options = OptionsBuilder.newOptions().addExecutorLzReceiveOption(50000, 0);
+        zkL2MpUsd(ZK_L2_MP_USD_ADDRESS).burnFrom(msg.sender, paramStablecoinQuantityToBridge);
 
-        // bytes memory _payload = abi.encode(msg.sender, paramStablecoinQuantityToBridge);
+        bytes memory options = OptionsBuilder.newOptions().addExecutorLzReceiveOption(50000, 0);
 
-        // _lzSend(
-        //     ETHEREUM_SEPOLIA_EID,
-        //     _payload,
-        //     options,
-        //     // Fee in native gas and ZRO token.
-        //     MessagingFee(msg.value, 0),
-        //     // Refund address in case of failed source message.
-        //     payable(msg.sender)
-        // );
+        bytes memory _payload = abi.encode(msg.sender, paramStablecoinQuantityToBridge);
 
-        string memory str = "ESTO DE AQUI ES PARA QUEMARLO.";
+        _lzSend(
+            ETHEREUM_SEPOLIA_EID,
+            _payload,
+            options,
+            // Fee in native gas and ZRO token.
+            MessagingFee(msg.value, 0),
+            // Refund address in case of failed source message.
+            payable(msg.sender)
+        );
     }
 
     function _lzReceive(

@@ -10,6 +10,7 @@ interface astarUsd
 {
     function balanceOf(address account) external view returns (uint256);
     function allowance(address owner, address spender) external view returns (uint256);
+    function transfer(address to, uint256 value) external returns (bool);
     function transferFrom(address from, address to, uint256 value) external returns (bool);
 }
 
@@ -20,7 +21,7 @@ contract astarEvmEndpoint is OApp
 
     
     uint32 public ASTAR_ZKYOTO_EID = 40266;
-    // address public ASTARUSD_TOKEN_ADDRESS = ;
+    address public ASTARUSD_TOKEN_ADDRESS = 0x0aAcEEC390386E300080811dF0b713fC0Af3D843;
 
 
     
@@ -36,10 +37,9 @@ contract astarEvmEndpoint is OApp
 
     function bridgeStablecoin(uint256 paramStablecoinQuantityToBridge) external payable 
     {
-        // require(astarUsd(ASTARUSD_TOKEN_ADDRESS).balanceOf(msg.sender) >= paramStablecoinQuantityToBridge, "Not enought stablecoin balance.");
-        // require(astarUsd(ASTARUSD_TOKEN_ADDRESS).allowance(msg.sender, address(this)) >= paramStablecoinQuantityToBridge, "Not enought allowance, please add more.");
+        require(astarUsd(ASTARUSD_TOKEN_ADDRESS).balanceOf(msg.sender) >= paramStablecoinQuantityToBridge, "Not enought stablecoin balance.");
+        require(astarUsd(ASTARUSD_TOKEN_ADDRESS).allowance(msg.sender, address(this)) >= paramStablecoinQuantityToBridge, "Not enought allowance, please add more.");
 
-        // bytes memory options = OptionsBuilder.newOptions().addExecutorLzComposeOption(0, 300000, 0);
         bytes memory options = OptionsBuilder.newOptions().addExecutorLzReceiveOption(50000, 0);
 
         bytes memory _payload = abi.encode(msg.sender, paramStablecoinQuantityToBridge);
@@ -55,10 +55,6 @@ contract astarEvmEndpoint is OApp
         );
     }
 
-
-
-
-
     function _lzReceive(
         Origin calldata _origin,
         bytes32 _guid,
@@ -70,6 +66,7 @@ contract astarEvmEndpoint is OApp
         // In this case, type is string, but depends on your encoding!
         // data = abi.decode(payload, (string));
 
-        string memory str = "ESTO DE AQUI ES PARA QUEMARLO Y LIBERAR.";
+        (address addressToUnlock, uint256 quantityToUnlock) = abi.decode(payload, (address, uint256));
+        astarUsd(ASTARUSD_TOKEN_ADDRESS).transfer(addressToUnlock, quantityToUnlock);
     }
 }
