@@ -1,0 +1,6 @@
+[submodule "frontEnd/frontEnd/near-multichain"]
+	path = frontEnd/frontEnd/near-multichain
+	url = https://github.com/near-examples/near-multichain.git
+[submodule "near-multichain"]
+	path = near-multichain
+	url = https://github.com/near-examples/near-multichain.git

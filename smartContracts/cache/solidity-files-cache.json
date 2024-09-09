@@ -3120,6 +3120,42 @@
         "astarEvmEndpoint",
         "astarUsd"
       ]
+    },
+    "/Users/kanoopz/Desktop/blockchain/ETHEREUM/hardhatHackathons/ethMexico24/ethMexico24/smartContracts/contracts/numberSc.sol": {
+      "lastModificationDate": 1725775549556,
+      "contentHash": "e94cde0c13ce7f5ef382e753d53a3b34",
+      "sourceName": "contracts/numberSc.sol",
+      "solcConfig": {
+        "version": "0.8.24",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "evmVersion": "paris",
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "0.8.24"
+      ],
+      "artifacts": [
+        "numberSc"
+      ]
     }
   }
 }

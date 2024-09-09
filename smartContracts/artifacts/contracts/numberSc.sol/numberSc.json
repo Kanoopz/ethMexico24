@@ -1,0 +1,50 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "numberSc",
+  "sourceName": "contracts/numberSc.sol",
+  "abi": [
+    {
+      "inputs": [],
+      "name": "lastCaller",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "number",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "newNumber",
+          "type": "uint256"
+        }
+      ],
+      "name": "setNumber",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x608060405234801561001057600080fd5b5060f78061001f6000396000f3fe6080604052348015600f57600080fd5b5060043610603c5760003560e01c80632113522a1460415780633fb5c1cb1460705780638381f58a146094575b600080fd5b6000546053906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6092607b36600460a9565b600155600080546001600160a01b03191633179055565b005b609c60015481565b6040519081526020016067565b60006020828403121560ba57600080fd5b503591905056fea2646970667358221220267358ecd28d6c40fbce48ef19a7434d060edf14cd999709357f75ccd35d64dc64736f6c63430008180033",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b5060043610603c5760003560e01c80632113522a1460415780633fb5c1cb1460705780638381f58a146094575b600080fd5b6000546053906001600160a01b031681565b6040516001600160a01b0390911681526020015b60405180910390f35b6092607b36600460a9565b600155600080546001600160a01b03191633179055565b005b609c60015481565b6040519081526020016067565b60006020828403121560ba57600080fd5b503591905056fea2646970667358221220267358ecd28d6c40fbce48ef19a7434d060edf14cd999709357f75ccd35d64dc64736f6c63430008180033",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
