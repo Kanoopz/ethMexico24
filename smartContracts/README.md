@@ -21,5 +21,5 @@
 
 - wrappedBitcoin:                   0x182426cdEAfe2E6877915D7A68165d313Ca93F87
 
-- metastarSavingsLendingProtocol:   -----------
+- metastarSavingsLendingProtocol:   0xee4B3583c436D0262CB518884e60fFd088c84ec4
 .
