@@ -20,3 +20,5 @@
 - zkL2AstarUsd:      0x8d1f6698C2dee8ADf1A53582D096AD7a7030afFa           
 
 - wrappedBitcoin:               0x182426cdEAfe2E6877915D7A68165d313Ca93F87
+
+.
