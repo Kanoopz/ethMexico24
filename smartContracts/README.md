@@ -13,12 +13,13 @@
 
 
 //  astarZkevmL2 /////////////////////////////////////////////////////////
-- astarZkL2EthereumEndpoint:    0x0542718f7215b442dE75A5aC5e25E3c9d8E1Bf36
-- zkL2MpUsd:                    0x8c0a3f863Bef1F709FA3F7f42eD9Efd8FEF6D6fC
+- astarZkL2EthereumEndpoint:        0x0542718f7215b442dE75A5aC5e25E3c9d8E1Bf36
+- zkL2MpUsd:                        0x8c0a3f863Bef1F709FA3F7f42eD9Efd8FEF6D6fC
 
-- astarZkL2AstarEvmEndpoint:    0x536422738b343750D9637268507647e627061a6d
-- zkL2AstarUsd:      0x8d1f6698C2dee8ADf1A53582D096AD7a7030afFa           
+- astarZkL2AstarEvmEndpoint:        0x536422738b343750D9637268507647e627061a6d
+- zkL2AstarUsd:                     0x8d1f6698C2dee8ADf1A53582D096AD7a7030afFa           
 
-- wrappedBitcoin:               0x182426cdEAfe2E6877915D7A68165d313Ca93F87
+- wrappedBitcoin:                   0x182426cdEAfe2E6877915D7A68165d313Ca93F87
 
+- metastarSavingsLendingProtocol:   -----------
 .
