@@ -2,6 +2,7 @@
 frutalWebHouseHackathon
 
 //  DESCRIPCION  ///
+
 "metAstarSavingsProtocol" es un protocolo que tiene cuatro principales objetivos:
 - Añadir astarNetwork a la oferta de chains del servicio de liquidStaking de meta pool.
 
@@ -32,6 +33,8 @@ frutalWebHouseHackathon
 
 
 //  ARQUITECTURA   ///
+<img width="872" alt="image" src="https://github.com/user-attachments/assets/13eba3f5-b6c2-464e-9a32-29a48a4bee66">
+
 
 
 
