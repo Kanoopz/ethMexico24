@@ -1,7 +1,7 @@
 # ethMexico24
 frutalWebHouseHackathon
 
-//  PRESENRACION    ///
+//  PRESENTACION    ///
 
 https://www.canva.com/design/DAGQlpG3_i0/eCcvk_cTg-xHiNaPdj3YSw/edit?utm_content=DAGQlpG3_i0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
 
