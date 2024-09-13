@@ -69,6 +69,7 @@ Para lograr hacer que este protocolo y la yieldMaximization lleguen a todas las 
 //  DIFICULTADES Y RETOS    //
 - Al implementar bitteWallet hubo muchas dificultades dado que el MPC y path no estaban bien configurados para producir crossChainSignatures, por lo tanto se requirió horas de investigación y debuggeo para entender lo que estaba pasando y encontrar el error especifico.
 - AstarL1Evm estubo caída en el momento de ejecutar las pruebas crossChain, lo que dificultó y extendió el tiempo de testeo.
+- La testnet de core no está disponible para su uso en este momento, por lo que fue imposible conectar el liquidStablecoin respaldado por stCore en el lending protocol que está en testnet. El hecho de que los contratos para core se hayan deployeado en mainnet hace imposible que se conecte crossChain con las testnets de las otras chains donde se deployearon los contratos.
 
 
 
