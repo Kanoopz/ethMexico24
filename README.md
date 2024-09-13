@@ -1,6 +1,12 @@
 # ethMexico24
 frutalWebHouseHackathon
 
+//  PRESENRACION    ///
+
+https://www.canva.com/design/DAGQlpG3_i0/eCcvk_cTg-xHiNaPdj3YSw/edit?utm_content=DAGQlpG3_i0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
+
+
 //  INSPIRACIÓN ///
 
 La idea viene del proposito de tratar de explotar al maximo los rendimientos que se pueden generar con un protocolo al usar todos los posibles mecanismos y productos disponibles en el mercado y ecosistema defi en uno solo.
