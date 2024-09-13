@@ -1,6 +1,12 @@
 # ethMexico24
 frutalWebHouseHackathon
 
+//  INSPIRACIÓN ///
+
+La idea viene del proposito de tratar de explotar al maximo los rendimientos que se pueden generar con un protocolo al usar todos los posibles mecanismos y productos disponibles en el mercado y ecosistema defi en uno solo.
+
+
+
 //  DESCRIPCION  ///
 
 "metAstarSavingsProtocol" es un protocolo que tiene cuatro principales objetivos:
