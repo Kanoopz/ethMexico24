@@ -26,9 +26,9 @@ frutalWebHouseHackathon
 //  UX  ///
 
 Para lograr hacer que este protocolo y la yieldMaximization lleguen a todas las personas posibles, tanto usuarios web2 y web3, se simplificó todo tipo de fricciones y dificultades en el proceso de ejecución. Para hacerlo posible, se utilizaron las features que ofrece la bitteWallet; accountAbstraction con passKeys, gasAbstraction y chainAbstraction gracias a MPC.
-- accountAbstraction: Hace posible que los usuarios usen blockchain wallets sin necesidad de manipular privateKeys, sustituyendolas por passKeys y contraseñas.
-- gassAbstraction: Permite ejecutar TXs sin necesidad de disponer de gas para pagar.
-- chainAbstraction: Logra que los usuarios manejen y ejecuten TXs en todas las blockchains disponibles, inclyendo evm y nonEvm. Gracias a esto no es necesario preocuparse por los assets ni la ubicación del mpUsd y astarUsd, dado que se pueden usar desde una chain remota, minimizando la complejidad de usar 3 diferentes chains de forma crossChains (ethereum, astarL1Evm y astarL2Zkevm).
+- bitteAccountAbstraction: Hace posible que los usuarios usen blockchain wallets sin necesidad de manipular privateKeys, sustituyendolas por passKeys y contraseñas.
+- bitteGassAbstraction: Permite ejecutar TXs sin necesidad de disponer de gas para pagar.
+- bitteChainAbstraction: Logra que los usuarios manejen y ejecuten TXs en todas las blockchains disponibles, inclyendo evm y nonEvm. Gracias a esto no es necesario preocuparse por los assets ni la ubicación del mpUsd y astarUsd, dado que se pueden usar desde una chain remota, minimizando la complejidad de usar 3 diferentes chains de forma crossChains (ethereum, astarL1Evm y astarL2Zkevm).
 
 
 
