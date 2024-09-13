@@ -20,6 +20,18 @@ La idea viene del proposito de tratar de explotar al maximo los rendimientos que
 
 
 
+//  COMO_SE_CONSTRUYÓ    ///
+El proyecto está construido usando multiples compuestos defi como liquidStaking, flashloans, lending&borrowing, bovedas e infra de oraculos, tecnología crossChain, accountAbstraction.
+
+El stack tecnologico usado fue:
+- solidity
+- javascript
+- typescript
+- reactTsx
+- hardhat
+
+
+
 //  YIELD_METHODS   ///
 - liquidStaking: Al usar liquidStaking assets como colateral para mintear stablecoins, mpEth y NASTR siguen generando rendimientos, por lo que no importa si se usa la stablecoin o solo se holdea, producen un 4% y 20% anual respectivamente.
 
@@ -44,6 +56,17 @@ Para lograr hacer que este protocolo y la yieldMaximization lleguen a todas las 
 - Para acceder al precio de ether en ethereum se usa el priceFeed del oraculo de chainlink.
 - Para acceder al precio de astar en astarEvmL2 se usa el priceFeed del oraculo de DIA.
 - Para acceder al precio de wrappedBitcoin en astarZkevmL2 se usa el priceFeed del oraculo de API3.
+
+
+
+//  DIFICULTADES Y RETOS    //
+- Al implementar bitteWallet hubo muchas dificultades dado que el MPC y path no estaban bien configurados para producir crossChainSignatures, por lo tanto se requirió horas de investigación y debuggeo para entender lo que estaba pasando y encontrar el error especifico.
+- AstarL1Evm estubo caída en el momento de ejecutar las pruebas crossChain, lo que dificultó y extendió el tiempo de testeo.
+
+
+
+//  LOGROS  ///
+Se logró un producto completamente funcional con todas las features plateadas funcionales y listo para usarse en mainnet.
 
 
 
