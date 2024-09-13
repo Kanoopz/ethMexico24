@@ -1,6 +1,42 @@
 # ethMexico24
 frutalWebHouseHackathon
 
+//  DESCRIPCION  ///
+"metAstarSavingsProtocol" es un protocolo que tiene cuatro principales objetivos:
+- Añadir astarNetwork a la oferta de chains del servicio de liquidStaking de meta pool.
+
+- Ofrecer yieldMaximization sobre el capital invertido aplicando hasta tres diferentes metorodos de yield: liquidStaking, flashloans y lending&borrowing fees.
+
+- Expandir el feature de dAppStaking de astarEvmL1 a traves de liquidStaking a astarZkevmL2 donde aún no está disponible.
+
+- Disponer de un protocolo defi de lending&borrowing que le de un caso de uso real a la liquidStablecoin que incentive su adopción.
+
+
+
+//  YIELD_METHODS   ///
+- liquidStaking: Al usar liquidStaking assets como colateral para mintear stablecoins, mpEth y NASTR siguen generando rendimientos, por lo que no importa si se usa la stablecoin o solo se holdea, producen un 4% y 20% anual respectivamente.
+
+- flashloans: Los liquidStaking assets que sirven como colateral para mintear stablecoins, se quedan en una boveda dado que es lo que garantiza el valor de la paridad 1:1 con el dolar, debido a esto, ese capital está parado sin generar rendimientos. La única forma disponible de generar rendimientos es a traves de flashloans que se aseguran de que en la misma TX se devuelva el capital prestado, requiriendo un fee del 10% que se reparte entre los minters que bloquearon sus liquidStaking assets.
+
+- lendingProtocol: Al bloquear liquidStablecoins como liquidez para el lendingProtocol, los usuarios que las aportaron ganan fees de la posiciones de prestamos que se realizan en el protocolo.
+
+
+
+//  CONSIDERACIONES_TECNICAS   ///
+- Se usa los precompiles de astarEvmL1 para interactuar con el runtime de la chain desde los smartContracts para acceder a la funcionalidad de dAppStaking y poder implementar liquidStaking.
+- Se usa la tecnología de layerZero para hacer la migración crossChain de astarUsd y mpUsd hacia astarZkevmL2.
+- Para acceder al precio de ether en ethereum se usa el priceFeed del oraculo de chainlink.
+- Para acceder al precio de astar en astarEvmL2 se usa el priceFeed del oraculo de DIA.
+- Para acceder al precio de wrappedBitcoin en astarZkevmL2 se usa el priceFeed del oraculo de API3.
+
+
+
+//  ARQUITECTURA   ///
+
+
+
+//  DEPLOYED_SMART_CONTRACTS   ///
+
 //  ethereumSepolia //////////////////////////////////////////////////////
 - mpEth:                            0xe50339fE67402Cd59c32656D679479801990579f
 - mpVault:                          0x3051dEB4cA8413a87362DF7B6dd7d5C86559C720
