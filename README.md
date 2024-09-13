@@ -7,6 +7,11 @@ https://www.canva.com/design/DAGQlpG3_i0/eCcvk_cTg-xHiNaPdj3YSw/edit?utm_content
 
 
 
+// FRONT_END_SAMPLE ///
+<img width="948" alt="image" src="https://github.com/user-attachments/assets/4023ef14-2999-4992-ad32-78478e1e7727">
+
+
+
 //  INSPIRACIÓN ///
 
 La idea viene del proposito de tratar de explotar al maximo los rendimientos que se pueden generar con un protocolo al usar todos los posibles mecanismos y productos disponibles en el mercado y ecosistema defi en uno solo.
