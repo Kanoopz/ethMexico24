@@ -108,3 +108,10 @@ Se logró un producto completamente funcional con todas las features plateadas f
 - wrappedBitcoin:                   0x182426cdEAfe2E6877915D7A68165d313Ca93F87
 
 - metastarSavingsLendingProtocol:   0xee4B3583c436D0262CB518884e60fFd088c84ec4
+
+
+
+//  bitteChainAbstractionTXs  ///
+
+near: https://testnet.nearblocks.io/es/txns/j3zDUUERR2WT4a41F14CrePGdNLXrNFGgd5qJc57Jqa#execution
+ethereum: https://sepolia.etherscan.io/tx/0x6d7035d0a2263da160d5010c3bb0a2e3410b59ef1d0d5c384dead3b041477b70
