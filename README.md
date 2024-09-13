@@ -16,7 +16,7 @@ La idea viene del proposito de tratar de explotar al maximo los rendimientos que
 //  DESCRIPCION  ///
 
 "metAstarSavingsProtocol" es un protocolo que tiene cuatro principales objetivos:
-- Añadir astarNetwork a la oferta de chains del servicio de liquidStaking de meta pool.
+- Añadir astarNetwork y Core a la oferta de chains del servicio de liquidStaking de meta pool.
 
 - Ofrecer yieldMaximization sobre el capital invertido aplicando hasta tres diferentes metorodos de yield: liquidStaking, flashloans y lending&borrowing fees.
 
@@ -39,7 +39,7 @@ El stack tecnologico usado fue:
 
 
 //  YIELD_METHODS   ///
-- liquidStaking: Al usar liquidStaking assets como colateral para mintear stablecoins, mpEth y NASTR siguen generando rendimientos, por lo que no importa si se usa la stablecoin o solo se holdea, producen un 4% y 20% anual respectivamente.
+- liquidStaking: Al usar liquidStaking assets como colateral para mintear stablecoins, mpEth, NASTR y stCore siguen generando rendimientos, por lo que no importa si se usa la stablecoin o solo se holdea, producen un 4% y 20% anual respectivamente.
 
 - flashloans: Los liquidStaking assets que sirven como colateral para mintear stablecoins, se quedan en una boveda dado que es lo que garantiza el valor de la paridad 1:1 con el dolar, debido a esto, ese capital está parado sin generar rendimientos. La única forma disponible de generar rendimientos es a traves de flashloans que se aseguran de que en la misma TX se devuelva el capital prestado, requiriendo un fee del 10% que se reparte entre los minters que bloquearon sus liquidStaking assets.
 
@@ -58,10 +58,11 @@ Para lograr hacer que este protocolo y la yieldMaximization lleguen a todas las 
 
 //  CONSIDERACIONES_TECNICAS   ///
 - Se usa los precompiles de astarEvmL1 para interactuar con el runtime de la chain desde los smartContracts para acceder a la funcionalidad de dAppStaking y poder implementar liquidStaking.
-- Se usa la tecnología de layerZero para hacer la migración crossChain de astarUsd y mpUsd hacia astarZkevmL2.
+- Se usa la tecnología de layerZero para hacer la migración crossChain de astarUsd, mpUsd y coreUsd hacia astarZkevmL2.
 - Para acceder al precio de ether en ethereum se usa el priceFeed del oraculo de chainlink.
 - Para acceder al precio de astar en astarEvmL2 se usa el priceFeed del oraculo de DIA.
 - Para acceder al precio de wrappedBitcoin en astarZkevmL2 se usa el priceFeed del oraculo de API3.
+- Para acceder al precio de core en coreMainnet se usa el priceFeed del oraculo de API3.
 
 
 
@@ -83,6 +84,11 @@ Se logró un producto completamente funcional con todas las features plateadas f
 
 
 //  DEPLOYED_SMART_CONTRACTS   ///
+
+//  coreMainnet //////////////////////////////////////////////////////
+- coreVault: 0x6E72A71540335Ba8E7052772dCDB4c5563a28228
+- coreUsd: 0xBE4068c2240539EE849C09e558AE61dE2584743F
+
 
 //  ethereumSepolia //////////////////////////////////////////////////////
 - mpEth:                            0xe50339fE67402Cd59c32656D679479801990579f
