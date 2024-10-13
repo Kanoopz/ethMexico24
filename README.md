@@ -1,6 +1,21 @@
 # ethMexico24
 frutalWebHouseHackathon
 
+* PARA LOS JUECES DE CORE *
+Los contratros que conforman la parte del protocolo implementada en core con su liquidStaking se encuentran en el path: smartContracts/contracts/core e incluye los siguientes smartContracts:
+- coreUsd.sol
+- coreVault.sol
+- stCoreMockup.sol
+
+Estos contratos se deployearon en testnet en las siguientes address:
+- coreVault: 0x6E72A71540335Ba8E7052772dCDB4c5563a28228
+- coreUsd: 0xBE4068c2240539EE849C09e558AE61dE2584743F
+- stCoreMockup: NO SE DEPLOYEO YA QUE ST CORE SI ESTÁ DEPLOYEADO EN MAINNET.
+
+** DADO QUE ESTOS CONTRATOS ESTÁN EN MAINNET Y LOS DE OTRAS CHAINS (ETHERUM MAINNET Y ASTAR) ESTÁN EN TESTNET, NO FUE POSIBLE CONECTARLOS DE FORMA CROSS CHAIN (DADO QUE CONECTAR TESNETS CON MAINNETS ES IMPOSIBLE EN UNA ARQUITECTURA CROSS CHAIN.
+
+
+
 //  PRESENTACION    ///
 
 https://www.canva.com/design/DAGQlpG3_i0/eCcvk_cTg-xHiNaPdj3YSw/edit?utm_content=DAGQlpG3_i0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
